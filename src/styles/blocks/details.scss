@@ -3,15 +3,16 @@
     display: grid;
     row-gap: 40px;
 
-    @include onTablet {
+    @include on-tablet {
       row-gap: 48px;
     }
-    @include  onDesktop {
+
+    @include on-desktop {
       margin-bottom: 36px;
     }
   }
   &__title--margin-bottom {
-    @include onDesktop {
+    @include on-desktop {
       margin-bottom: 48px;
     }
   }
@@ -19,30 +20,37 @@
 
 .detail {
   grid-column: 1 / -1;
-  @include pageGrid;
+
+  @include page-grid;
+
   &__link {
     position: relative;
     height: 130px;
-    @include onTablet {
+
+    @include on-tablet {
       height: 187px;
     }
-    @include onDesktop {
+
+    @include on-desktop {
       height: 320px;
     }
+
     grid-column: span 1;
     &--wide {
-      @include onTablet {
+      @include on-tablet {
         grid-column: span 4;
       }
-      @include onDesktop {
+
+      @include on-desktop {
         grid-column: span 8;
       }
     }
     &--square {
-      @include onTablet {
+      @include on-tablet {
         grid-column: span 2;
       }
-      @include onDesktop {
+
+      @include on-desktop {
         grid-column: span 4;
       }
     }
@@ -52,12 +60,15 @@
     object-fit: cover;
     position: absolute;
     height: 130px;
-    @include onTablet {
+
+    @include on-tablet {
       height: 187px;
     }
-    @include onDesktop {
+
+    @include on-desktop {
       height: 320px;
     }
+
     @include hover(transform, scale(1.05));
   }
   &__title {
@@ -74,11 +85,11 @@
     font-weight: 400;
     line-height: 140%;
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: span 8;
     }
   }
   &__button {
-    @include pageGrid;
+    @include page-grid;
   }
 }

@@ -3,12 +3,12 @@
   background-size: cover;
   background-position: right;
 
-  @include onTablet {
+  @include on-tablet {
     background-size: cover;
     background-position: center;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,10 +30,12 @@
 
   &__bottom {
     padding-bottom: 88px;
-    @include onTablet {
+
+    @include on-tablet {
       padding-bottom: 130px;
     }
-    @include onDesktop {
+
+    @include on-desktop {
       padding-bottom: 203px;
     }
   }
@@ -46,7 +48,8 @@
     font-weight: 700;
     line-height: 100%;
     letter-spacing: -1.5px;
-    @include onTablet {
+
+    @include on-tablet {
       font-size: 64px;
       font-weight: 700;
     }

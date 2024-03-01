@@ -7,12 +7,12 @@
     padding-block: 60px;
     background-color: $main-background-color;
 
-    @include onTablet {
+    @include on-tablet {
       padding-block: 120px;
       row-gap: 120px;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       row-gap: 144px;
     }
   }
